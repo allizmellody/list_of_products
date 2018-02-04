@@ -64,7 +64,7 @@ class Pagination extends Component {
       return null
     }
     return (
-        <ul className=' container pagination'>
+        <ul className='container pagination'>
           <li className={ `pager ${currentPage === 1 ? 'disabled' : '' }` }>
             <a onClick={ () => this.setPage(currentPage - 1) }>{ 'Назад' }</a>
           </li>

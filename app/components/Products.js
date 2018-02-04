@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../containers/index.css'
+import '../containers/index.less'
 import products from '../products'
 import Pagination from './Pagination'
 import ProductInfo from './ProductInfo'

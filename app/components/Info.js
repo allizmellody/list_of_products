@@ -7,7 +7,7 @@ class Info extends Component {
         <div className='info'>
           <span className='code'>{ `Код: ${ parseInt(code) }` }</span>
           <span className='code date'>{ `Обновлено: ${ date }` }</span><br/>
-          <span className='title'>{ title }</span><br/>
+          <title className='title'>{ title }</title><br/>
           <span className='assocProducts'>
             { `Могут понадобиться: ${ assocProducts }` }
           </span>

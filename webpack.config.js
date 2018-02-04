@@ -27,10 +27,11 @@ module.exports = {
         ],
         test: /\.js$/
       }, {
-        test: /\.css$/,
+        test: /\.less$/,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          'less-loader'
         ]
       }, {
         test: /\.(jpe?g|png|gif|svg)$/i,
