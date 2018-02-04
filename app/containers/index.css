@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700");
+
+body {
+  font-family: 'Arimo', sans-serif;
+  background:  #f4f4f4;
+  padding:     0 30px;
+}
+
+button,
+button:active,
+button:focus,
+button:hover,
+input:active,
+input:focus,
+input:hover {
+  outline: none;
+}
+
+.container {
+  max-width: 800px;
+  margin:    20px auto;
+  padding:   0;
+}
+
+.component {
+  display:       inline-block;
+  box-sizing:    border-box;
+  background:    #fff;
+  width:         100%;
+  margin-bottom: 15px;
+  padding:       20px;
+}
+
+.component:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.img_container {
+  float: left;
+  width: 20%;
+}
+
+.img {
+  float:     inherit;
+  max-width: 100%;
+  height:    auto;
+  width:     auto;
+}
+
+.info {
+  float:        left;
+  box-sizing:   border-box;
+  color:        #757575;
+  width:        55%;
+  height:       100%;
+  padding-left: 10px;
+}
+
+.code {
+  display:       inline-block;
+  margin-bottom: 20px;
+  font-size:     75%;
+}
+
+.date {
+  float: right;
+}
+
+.title {
+  display:       block;
+  color:         #000;
+  margin-bottom: -10px;
+  font-weight:   700;
+  font-size:     120%;
+}
+
+.assocProducts {
+  font-size: 80%;
+}
+
+.right {
+  float:     right;
+  width:     25%;
+  font-size: 90%;
+}
+
+.price {
+  float:      inherit;
+  text-align: right;
+  width:      100%;
+  font-size:  85%;
+}
+
+.cost {
+  display:       block;
+  color:         #9e9e9e;
+  margin-bottom: -10px;
+  font-size:     150%;
+}
+
+.gold_cost {
+  color:         #000;
+  margin-bottom: -10px;
+  font-weight:   700;
+}
+
+.bold {
+  float:       left;
+  width:       40%;
+  font-size:   100%;
+  font-weight: 700;
+}
+
+.unit {
+  cursor:          pointer;
+  display:         inline-block;
+  box-sizing:      border-box;
+  text-align:      center;
+  width:           43%;
+  margin-right:    5px;
+  text-decoration: underline;
+}
+
+.active {
+  cursor:          pointer;
+  background:      #757575;
+  color:           #fff;
+  padding:         5px;
+  text-decoration: none;
+}
+
+.pack {
+  margin-right: 0;
+}
+
+.disabled {
+  cursor: default;
+  color:  #757575
+}
+
+.bucket {
+  width: 100%;
+  float: right;
+}
+
+.hint {
+  float:      right;
+  box-sizing: border-box;
+  width:      100%;
+  margin-top: 5px;
+  padding:    5px;
+  font-size:  90%;
+  border:     1px solid #9e9e9e;
+}
+
+.hint_text {
+  float:       inherit;
+  display:     inline-block;
+  text-align:  center;
+  margin-left: 5px;
+  font-size:   0.875em;
+}
+
+.input {
+  position:   relative;
+  display:    inline-block;
+  box-sizing: border-box;
+  width:      20%;
+  height:     40px;
+  margin-top: 10px;
+}
+
+.number {
+  -moz-appearance: textfield;
+  box-sizing:      inherit;
+  text-align:      center;
+  width:           100%;
+  height:          100%;
+  font-size:       20px;
+}
+
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin:             0;
+}
+
+.arrow_up,
+.arrow_down {
+  position:    absolute;
+  box-sizing:  inherit;
+  text-align:  center;
+  cursor:      pointer;
+  color:       #000;
+  width:       65%;
+  height:      20px;
+  font-size:   17px;
+  font-weight: 700;
+  border:      0.5px solid #757575;
+  left:        99%;
+}
+
+.arrow_up {
+  top: 0;
+}
+
+.arrow_down {
+  bottom: 0;
+}
+
+.button {
+  float:       right;
+  cursor:      pointer;
+  background:  #4db6ac;
+  width:       65%;
+  height:      40px;
+  margin-top:  10px;
+  margin-left: 5px;
+  border:      none;
+}
+
+.button_text {
+  position:       relative;
+  top:            -4px;
+  display:        inline-block;
+  text-transform: uppercase;
+  margin-top:     8px;
+  font-weight:    700;
+}
+
+.icon {
+  width: 25px;
+}
+
+.pagination {
+  text-align: center;
+  background: none;
+}
+
+.pager {
+  cursor:     pointer;
+  display:    inline-block;
+  text-align: inherit;
+  width:      30px;
+  height:     20px;
+}
+
+.pager:nth-child(1),
+.pager:nth-last-child(1) {
+  width: 70px;
+}
+
+@media (max-width: 840px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .date {
+    display: none;
+  }
+
+  .title {
+    font-size: 110%;
+  }
+
+  .assocProducts {
+    display: none;
+  }
+
+  .unit {
+    width: 46%;
+  }
+
+  .input,
+  .button {
+    height: 35px
+  }
+
+  .arrow_down,
+  .arrow_up {
+    height: 18px;
+  }
+
+  .pagination {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .component {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .info {
+    width: 50%;
+  }
+
+  .code {
+    font-size:     65%;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 100%;
+  }
+
+  .right {
+    width: 30%;
+  }
+
+  .price {
+    font-size: 75%;
+  }
+
+  .hint {
+    font-size: 85%;
+  }
+
+  .input,
+  .button {
+    height: 30px;
+  }
+
+  .arrow_up,
+  .arrow_down {
+    height:    16px;
+    font-size: 14px;
+  }
+
+  .button {
+    width: 60%;
+  }
+
+  .button_text {
+    display: none;
+  }
+
+  .button .icon {
+    display: inline;
+  }
+}
+
+@media (max-width: 605px) {
+
+  body {
+    padding: 0 5px;
+  }
+  .component {
+    margin-bottom: 5px;
+  }
+  .title {
+    font-size: 90%;
+  }
+
+  .price {
+    font-size: 65%
+  }
+
+  .bold {
+    float: none;
+  }
+
+  .input,
+  .button {
+    height: 25px;
+  }
+
+  .number {
+    font-size: 15px;
+  }
+
+  .button .icon {
+    width: 23px;
+  }
+
+  .arrow_down,
+  .arrow_up {
+    height:    13px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 510px) {
+  .title {
+    font-size: 80%;
+  }
+
+  .hint {
+    display: none;
+  }
+
+  .unit {
+    width: 60%;
+  }
+
+  .pagination {
+    font-size: 70%;
+  }
+
+  .pager {
+    width:  20px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .code {
+    font-size: 55%;
+  }
+
+  .title {
+    font-size: 65%;
+  }
+
+  .price {
+    font-size: 60%;
+  }
+
+  .input,
+  .button {
+    height: 20px;
+  }
+
+  .button .icon {
+    width: 18px;
+  }
+
+  .arrow_down,
+  .arrow_up {
+    height:    10px;
+    font-size: 8px;
+  }
+}

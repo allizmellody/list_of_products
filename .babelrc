@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "safari >= 7"]
+        },
+        "useBuiltIns": true,
+        "loose": false,
+        "spec": false,
+        "uglify": false,
+        "debug": false,
+        "modules": false,
+        "include": [],
+        "exclude": []
+      }
+    ],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "transform-runtime"
+  ]
+}
